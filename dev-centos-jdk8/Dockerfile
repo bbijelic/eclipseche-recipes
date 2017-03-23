@@ -8,7 +8,7 @@ FROM centos:latest
 # 22   - SSH access
 EXPOSE 4403 8000 8443 9443 22
 
-MAINTAINER Bojan Bijelic <bojan.bijelic.os@gmail.com> - Developer
+MAINTAINER Bojan Bijelic <https://github.com/bbijelic>
 
 RUN yum -y install epel-release && \
     yum -y install sudo openssh-server procps wget unzip mc git vim-enhanced gitflow curl nmap yum-plugin-ovl && \
