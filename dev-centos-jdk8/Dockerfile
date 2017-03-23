@@ -11,7 +11,7 @@ EXPOSE 4403 8000 8443 9443 22
 MAINTAINER Bojan Bijelic <https://github.com/bbijelic>
 
 RUN yum -y install epel-release && \
-    yum -y install sudo openssh-server procps wget unzip mc git vim-enhanced gitflow curl nmap yum-plugin-ovl && \
+    yum -y install sudo openssh-server procps wget unzip mc git vim-enhanced gitflow curl nmap yum-plugin-ovl dos2unix && \
     mkdir /var/run/sshd && \
     sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd && \
     echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
